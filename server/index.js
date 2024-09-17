@@ -52,9 +52,9 @@ app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
-// app.get("/", (req, res) => {
-//   res.send("hi");
-// });
+app.get("/", (req, res) => {
+  res.send("hi");
+});
 const PORT = process.env.PORT || 6001;
 mongoose
   .connect(process.env.MONGO_URL, {
