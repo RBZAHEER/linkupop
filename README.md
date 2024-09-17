@@ -1,4 +1,4 @@
-# Social-network
+# LinkUp
 
 ## Challenge
 
@@ -9,7 +9,7 @@ Create a mini social network. The application should have features like:-
 - View other users' profiles & make them friends/unfriend them.
 - View a list of mutual friends between users. A mutual friend is a user who is a friend of two other users who may or may not know each other.
 
-## Social-network
+## LinkUp
 
 This is a mini social network web application created using the MERN stack, which stands for MongoDB, Express, React, and Node.js. This app allows users to sign up or sign in, create their profile, search for other users, view other users' profiles, and make them friends or unfriend them.
 
@@ -62,7 +62,7 @@ The following are the major dependencies that have been used in this project:
 1.Clone this repository to your local machine.
 
 ```bash
-  git clone https://github.com/shinoj-exe/social-network.git
+  git clone https://github.com/RBZAHEER/linkup.git
 ```
 
 2.Go to the project directory
