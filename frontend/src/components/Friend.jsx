@@ -25,7 +25,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath, sameUser }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `https://linkup-backend-y5ql.onrender.com/users/${_id}/${friendId}`,
+      `http://localhost:3001/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

@@ -65,7 +65,7 @@ const Form = () => {
     formdata.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://linkup-backend-y5ql.onrender.com/auth/register",
+      "http://localhost:3001/auth/register",
       {
         method: "POST",
         body: formdata,
@@ -80,14 +80,11 @@ const Form = () => {
   };
 
   const login = async (values, onsubmitProps) => {
-    const loggedInResponse = await fetch(
-      "https://linkup-backend-y5ql.onrender.com/auth/login",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
-      }
-    );
+    const loggedInResponse = await fetch("http://localhost:3001/auth/login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    });
     const loggedIn = await loggedInResponse.json();
     // console.log(loggedIn);
     onsubmitProps.resetForm();

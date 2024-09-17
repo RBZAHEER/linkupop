@@ -15,7 +15,7 @@ const FriendListWidget = ({ userId }) => {
   const getFriends = async () => {
     //this is not for only the current user, but also if we travel to another person profile
     const response = await fetch(
-      `https://linkup-backend-y5ql.onrender.com/users/${userId}/friends`,
+      `http://localhost:3001/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },
