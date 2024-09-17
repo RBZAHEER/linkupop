@@ -68,7 +68,7 @@ The following are the major dependencies that have been used in this project:
 2.Go to the project directory
 
 ```bash
-  cd SOCIAL-NETWORK
+  cd linkup
 ```
 
 3.Install the dependencies for both the client and server side.
